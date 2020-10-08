@@ -136,7 +136,7 @@ div.d{
 }
 
 .fh5co-nav {
-  position: fixed;
+
   width: 100%;
   left: 0;
   right: 0;
@@ -154,12 +154,12 @@ div.d{
   }
 }
 .fh5co-nav.scrolled {
-  background: #2A2A2E repeat;
+  background:white repeat;
   top: -82px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .fh5co-nav.scrolled {
-    background: #2A2A2E repeat;
+    background: white repeat;
   }
 }
 @media screen and (max-width: 480px) {
@@ -173,7 +173,7 @@ div.d{
   padding: 0;
   font-weight: bold;
   font-family: "Cormorant Garamond", Georgia, serif;
-  color: #fff !important;
+  color: black !important;
 }
 .scrolled .fh5co-nav #fh5co-logo {
   color: #000 !important;
@@ -211,7 +211,7 @@ div.d{
 .fh5co-nav ul li a {
   padding: 30px 15px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.7);
+  color: black;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -220,7 +220,7 @@ div.d{
   color: rgba(0, 0, 0, 0.7);
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+  color: fh5co-nav;
 }
 .scrolled .fh5co-nav ul li a:hover, .scrolled .fh5co-nav ul li a:focus, .scrolled .fh5co-nav ul li a:active {
   color: #2A2A2E;
@@ -289,7 +289,7 @@ div.d{
   color: rgba(0, 0, 0, 0.7);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff;
+  color: black;
   position: relative;
 }
 .scrolled .fh5co-nav ul li.active > a {

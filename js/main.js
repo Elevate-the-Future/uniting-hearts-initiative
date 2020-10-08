@@ -189,22 +189,23 @@
 			return false;
 		});
 
-		$(window).scroll(function(){
+		
+		// $(window).scroll(function(){
 
-			var $win = $(window);
-			if ($win.scrollTop() > 200) {
-				$('.js-top').addClass('active');
-			} else {
-				$('.js-top').removeClass('active');
-			}
+		// 	var $win = $(window);
+		// 	if ($win.scrollTop() > 200) {
+		// 		$('.js-top').addClass('active');
+		// 	} else {
+		// 		$('.js-top').removeClass('active');
+		// 	}
 
-			if ( $win.scrollTop() > 100 ) {
-				$('.fh5co-nav').addClass('scrolled');
-			} else {
-				$('.fh5co-nav').removeClass('scrolled');
-			}
+		// 	if ( $win.scrollTop() > 100 ) {
+		// 		$('.fh5co-nav').addClass('scrolled');
+		// 	} else {
+		// 		$('.fh5co-nav').removeClass('scrolled');
+		// 	}
 
-		});
+		// });
 	
 	};
 
