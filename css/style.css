@@ -82,7 +82,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 blockquote  p {
   font-family: "Gill Sans Light";
-  font-size: 1rem;
+  font-size: 10rem;
+  color: black;
 }
 .author {
   font-family: "Rockness";
@@ -1901,3 +1902,8 @@ textarea {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.blockquote  {
+  height: 50rem;
+}
