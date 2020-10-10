@@ -67,7 +67,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F9EAEC);
+  color: #F9EAEC;
   outline: none;
   text-decoration: none;
 }
@@ -109,7 +109,7 @@ h4 {
 h5{
   font-size: 20px;
   font-family: "Gill Sans Light";
-  color:#2A2A2E;
+  color:white;
 }
 .right{
   position: absolute;
@@ -489,7 +489,7 @@ div.d{
 
 .fh5co-section-about{
   padding: 7em 0;
-  background-color: #e7e3dc;
+  background-color: #194056;
 }
 
 .fh5co-section-timeline{
@@ -510,7 +510,7 @@ div.d{
   }
 }
 .fh5co-section p {
-  color:#2A2A2E;
+  color: white;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -519,10 +519,11 @@ div.d{
   width: 100%;
   float: left;
   margin-bottom: 50px;
+  color: white;
 }
 .section-heading h2 {
   font-size: 75px;
-  color: #2A2A2E;
+  color: white;
   font-family: "Rockness";
 }
 
@@ -1500,7 +1501,7 @@ tr:hover {background-color:#f5f5f5;}
   line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: #2A2A2Escale;
+  -moz-osx-font-smoothing: #2A2A2E;
   content: "\ebfc";
   font-size: 20px;
   color: rgba(255, 255, 255, 0.2);
@@ -1906,4 +1907,41 @@ textarea {
 
 .blockquote  {
   height: 50rem;
+  text-align: center;
+}
+.blockquote  p{
+  font-size: 5rem;
+  color: #000;
+}
+.blockquote  span{
+  color: #000;
+  font-size: 4rem;
+}
+
+.contactBox {
+  height: 50rem;
+  color: #000;
+  background-color: #194056;  
+}
+.about div {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+.aboutText {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15%;
+}
+
+.about {
+  background-color: #194056;  
+  
+}
+.about img {
+  height: 50rem;
+  float:left;
 }
