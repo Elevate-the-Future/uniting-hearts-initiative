@@ -1968,3 +1968,23 @@ textarea {
 .contact-group input {
   width: 50%;
 }
+
+.about-blurb {
+
+  background-color: white;
+  height: 50%;
+  width: 70%;
+  
+}
+.about-blurb p {
+  color: #194056;
+}
+.aboutheader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../images/aboutbg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
