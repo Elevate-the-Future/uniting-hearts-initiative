@@ -116,21 +116,22 @@
 	<div  class=" contactBox">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 animate-box img-to-responsive animate-box" data-animate-effect="fadeInLeft">
-				</div>
-				<div class="col-md-7 animate-box" data-animate-effect="fadeInRight">
-					<h2>
-						<span>CONTACT US</span>
-					</h2>
-					<div>
-						<input type="text" value="Name" >
-						<input type="text" value="Email" >
-					</div>
-					<div>
-						<input type="text" value="Subject" >
-						<textarea name="" placeholder="Type Message here..."></textarea>
-					</div>
-					<button>Submit</button>
+				<div class="contact-form">
+					<form action="">
+						<label > Contact:</label>
+						<div class= "contact-group">
+							<input  type="text" id="fname" name="firstname" placeholder="Your name..">
+					
+							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+						</div>
+						
+						<input type="text" id="subject" name="subject" placeholder="subject">
+
+						<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+					
+						<input type="submit" value="Submit">
+					
+					  </form>
 				</div>
 			</div>
 		</div>
