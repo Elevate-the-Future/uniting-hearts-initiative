@@ -1923,28 +1923,53 @@ textarea {
   color: #000;
   background-color: #194056;  
 }
-.about div {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  display: flex;
-}
-.aboutText {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 15%;
-}
-
 .about {
   background-color: #194056;  
   
 }
-.about img {
-  height: 50rem;
-  float:left;
+.about div div.img-container {
+  width: 60%;
+  max-width: 900px;
+  height: auto;
 }
+.about div div.img-container img{
+  width: 100%;
+  height: auto;
+}
+.about div {
+  display: flex;
+  text-align: center;
+}
+.aboutText {
+  width: calc(100vw - 900px);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.aboutText h2, .aboutText h5 {
+  width: 80%;
+  max-width: 560px;
+}
+
+@media (max-width: 1500px){
+  .aboutText {
+    width: 40%;
+  }
+}
+@media (max-width: 948px) {
+  .about div.about-container {
+    flex-direction: column-reverse;
+  }
+  .about div div.aboutText, .about div div.img-container {
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
 .contact-form form {
   width: 100%;
   height: 25rem;
@@ -1987,4 +2012,36 @@ textarea {
   background-image: url(../images/aboutbg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#fh5co-footer .row-pb-md {
+  padding-bottom: 2em !important;
+}
+
+#fh5co-footer .fh5co-widget {
+    margin-bottom: 0px;
+}
+
+#fh5co-footer .row.copyright .col-md-12.text-center p {
+  margin-bottom: 0px;
+}
+
+#fh5co-slider, #fh5co-about, #fh5co-wireframe, #fh5co-started, #fh5co-portfolio, #fh5co-blog, #fh5co-content-section, #fh5co-contact, #fh5co-footer {
+    padding: 5em 0;
+}
+
+.fh5co-nav {
+  padding: 20px 0px;
+}
+
+.fh5co-nav ul {
+    margin: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fh5co-nav ul h3 {
+    margin-bottom: 0px;
+
 }
