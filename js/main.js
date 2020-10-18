@@ -2,27 +2,6 @@
 	
 	'use strict';
 
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
-
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -104,17 +83,6 @@
 		});
 	};
 
-	var fullHeight = function() {
-
-		if ( !isMobile.any() ) {
-			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
-
-	};
-
 
 
 	var contentWayPoint = function() {
@@ -143,7 +111,7 @@
 							}
 
 							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
+						},  k * 50, 'easeInOutExpo' );
 					});
 					
 				}, 100);
@@ -189,7 +157,6 @@
 			return false;
 		});
 
-		
 		$(window).scroll(function(){
 
 			var $win = $(window);
@@ -197,12 +164,6 @@
 				$('.js-top').addClass('active');
 			} else {
 				$('.js-top').removeClass('active');
-			}
-
-			if ( $win.scrollTop() > 100 ) {
-				$('.fh5co-nav').addClass('scrolled');
-			} else {
-				$('.fh5co-nav').removeClass('scrolled');
 			}
 
 		});
@@ -215,6 +176,13 @@
 		$(".fh5co-loader").fadeOut("slow");
 	};
 
+	var counter = function() {
+		$('.js-counter').countTo({
+			 formatter: function (value, options) {
+	      return value.toFixed(options.decimals);
+	    },
+		});
+	};
 
 	var counterWayPoint = function() {
 		if ($('#fh5co-counter').length > 0 ) {
@@ -228,109 +196,16 @@
 		}
 	};
 
-	var sliderMain = function() {
-		
-	  	$('#fh5co-slider-wrwap .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
-
-	  	});
-
-	  	$('#fh5co-slider-wrwap .flexslider .slides > li').css('height', $(window).height());	
-	  	$(window).resize(function(){
-	  		$('#fh5co-slider-wrwap .flexslider .slides > li').css('height', $(window).height());	
-	  	});
-
-	  	
-	};
-
-	var parallax = function() {
-		if ( !isMobile.any() ) {
-			$(window).stellar();
-		}
-	};
-
-	var DateTimePickerFunc = function() {
-		if ($('#taskdatetime').length > 0) {
-			$('#taskdatetime').datetimepicker();
-		}
-	}
-
-	var zoomFunc = function() {
-		if ($('.zoomerang').length > 0) {
-	   	// Zoomerang.config({maxHeight:730,maxWidth:900}).listen('.zoomerang');
-
-	   	$('.fh5co-bg-img').each(function(){
-	   		$(this).css('width', '100%');
-	   	});
-	   	Zoomerang
-                .config({
-                    maxHeight: 900,
-                    maxWidth: 800,
-                    bgColor: '#000',
-                    bgOpacity: .85,
-                    onOpen: openCallback,
-                    onClose: closeCallback,
-                    onBeforeOpen: beforeOpenCallback,
-                    onBeforeClose: beforeCloseCallback
-                })
-                .listen('.zoomerang')
-
-            function openCallback (el) {
-                console.log('zoomed in on: ')
-                // console.log(el)
-            }
-
-            function closeCallback (el) {
-                console.log('zoomed out on: ')
-                // console.log(el)
-            }
-
-            function beforeOpenCallback (el) {
-            	console.log('on before zoomed in on:')
-            	// console.log(el)
-            }
-
-            function beforeCloseCallback (el) {
-            	console.log('on before zoomed out on:')
-            	// console.log(el)
-            }
-
-	   }
-	}
-
 	
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
 		burgerMenu();
 		contentWayPoint();
-		sliderMain();
 		dropdown();
 		goToTop();
 		loaderPage();
 		counterWayPoint();
-		fullHeight();
-		parallax();
-		DateTimePickerFunc();
-
-		$('.fh5co-bg-img').each(function(){
-   		$(this).css('width', '100%');
-   	});
-		// zoomFunc();
 	});
 
 
