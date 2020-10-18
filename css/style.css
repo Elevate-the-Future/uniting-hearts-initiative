@@ -1724,3 +1724,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 /*# sourceMappingURL=style.css.map */
+#fh5co-about {
+  background-color: #194056;
+  color: white;
+}
+#fh5co-about h3 {
+  color: white;
+}
