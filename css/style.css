@@ -315,6 +315,7 @@ figure {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: auto;
+    min-height: none;
     padding: 120px 0 20px 0;
     font-size: 1.55rem;
   }
