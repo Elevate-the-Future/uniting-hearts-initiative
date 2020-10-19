@@ -1803,6 +1803,14 @@ figure {
   padding-bottom: 0;
 }
 
+.fh5co-cover {
+  min-height: 100vh;
+}
+
+.fh5co-cover > div.container {
+  height: 100%;
+}
+
 .middleBox {
   display: flex;
   flex-direction: column;
@@ -1815,5 +1823,5 @@ figure {
 .middleBox table tbody tr,
 .middleBox table tbody tr td {
   width: 100%;
-  max-width: 700px;
+  max-width: 750px;
 }
