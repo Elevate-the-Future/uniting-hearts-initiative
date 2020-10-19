@@ -1734,3 +1734,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-counter {
     padding-bottom: 0;
 }
+
+.middleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
