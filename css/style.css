@@ -291,7 +291,7 @@ figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1825,4 +1825,9 @@ figure {
 .middleBox table tbody tr td {
   width: 100%;
   max-width: 750px;
+}
+
+.middleBox table tbody tr td p,
+.middleBox table tbody tr td h3 {
+  padding: 1%;
 }
