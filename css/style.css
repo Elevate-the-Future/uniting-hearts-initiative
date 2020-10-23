@@ -1828,10 +1828,6 @@ figure {
 @media screen and (max-width: 768px) {
   .middleBox{  
     padding-top: 0vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 .middleBox table,
