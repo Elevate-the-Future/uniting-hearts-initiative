@@ -129,36 +129,44 @@
 															</li>
 															<!--<li class="address">198 West 21th Street, <br> Suite 721 NewYork NY 10016</li>
 															<!--<li class="phone"><a href="tel://1234567920">+ 1235 23598</a></li>-->
-															<li class="email">
+															<li>
+																<i class="fas fa-envelope" style="color: #194056"></i> &nbsp;
 																<a style="color:black"
 																	href="mailto:unitingheartsinitiative@gmail.com">unitingheartsinitiative@gmail.com</a>
 															</li>
 
 															<li>
 																<div class=" animate-box fadeInUp animated-fast">
-																	<form action="#">
+																	<form action="https://formsubmit.co/unitingheartsinitiative@gmail.com" method="POST">
 																		<div class="row form-group">
 																			<div class="col-md-6">
 																				<label for="fname">First Name</label>
 																				<input type="text" id="fname"
 																					class="form-control"
-																					placeholder="Your firstname"
+																					placeholder="First Name"
+																					name="First Name"
+																					required
 																					style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
 																			</div>
 																			<div class="col-md-6">
 																				<label for="lname">Last Name</label>
 																				<input type="text" id="lname"
 																					class="form-control"
-																					placeholder="Your lastname">
+																					placeholder="Last Name"
+																					name="Last Name"
+																					required>
+
 																			</div>
 																		</div>
 
 																		<div class="row form-group">
 																			<div class="col-md-12">
 																				<label for="email">Email</label>
-																				<input type="text" id="email"
+																				<input type="email" id="email"
 																					class="form-control"
-																					placeholder="Your email address">
+																					placeholder="Email Address"
+																					name="Email Adress"
+																					required>
 																			</div>
 																		</div>
 
@@ -167,7 +175,9 @@
 																				<label for="subject">Subject</label>
 																				<input type="text" id="subject"
 																					class="form-control"
-																					placeholder="Your subject of this message">
+																					placeholder="Subject"
+																					name="Subject"
+																					required>
 																			</div>
 																		</div>
 
@@ -177,7 +187,10 @@
 																				<textarea name="message" id="message"
 																					cols="30" rows="10"
 																					class="form-control"
-																					placeholder="Say something about us"></textarea>
+																					placeholder="Type your message here..."
+																					name="Message"
+																					required>
+																					</textarea>
 																			</div>
 																		</div>
 																		<div class="form-group">

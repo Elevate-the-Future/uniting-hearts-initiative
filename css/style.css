@@ -51,7 +51,7 @@ body {
 }
 
 a {
-  color: #0c9cee;
+  color: #194056;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -59,7 +59,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #0c9cee;
+  color: #194056;
   outline: none;
   text-decoration: none;
 }
@@ -83,17 +83,17 @@ figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #0c9cee;
+  background: #194056;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #0c9cee;
+  background: #194056;
 }
 
 ::selection {
   color: #fff;
-  background: #0c9cee;
+  background: #194056;
 }
 
 .fh5co-nav {
@@ -219,7 +219,7 @@ figure {
   color: #fff;
 }
 .fh5co-nav ul li.btn-cta a {
-  color: #0c9cee;
+  color: #194056;
 }
 .fh5co-nav ul li.btn-cta a span {
   background: #f35f55;
@@ -417,7 +417,7 @@ figure {
   background: none;
 }
 .pagination > li.active > a {
-  background: #0c9cee !important;
+  background: #194056 !important;
   -webkit-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
   -ms-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
@@ -448,7 +448,7 @@ figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #0c9cee;
+  color: #194056;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -467,7 +467,7 @@ figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #0c9cee;
+  color: #194056;
   position: absolute;
   left: 0;
   top: 0.05em;
@@ -544,7 +544,7 @@ figure {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 30px;
-  background: #0c9cee;
+  background: #194056;
   color: #fff;
   border: none !important;
   font-size: 18px;
@@ -674,7 +674,7 @@ figure {
   margin-bottom: 20px;
 }
 #fh5co-blog .fh5co-post h3 a {
-  color: #0c9cee;
+  color: #194056;
 }
 #fh5co-blog .fh5co-post h3 a:hover {
   color: #f35f55;
@@ -728,7 +728,7 @@ figure {
 #fh5co-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #0c9cee;
+  color: #194056;
   font-weight: 100;
   display: block;
 }
@@ -1584,9 +1584,9 @@ figure {
 }
 
 .btn-primary {
-  background: #0c9cee;
+  background: #194056;
   color: #fff;
-  border: 2px solid #0c9cee;
+  border: 2px solid #194056;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1596,13 +1596,13 @@ figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #0c9cee;
-  border: 2px solid #0c9cee;
+  color: #194056;
+  border: 2px solid #194056;
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus,
 .btn-primary.btn-outline:active {
-  background: #0c9cee;
+  background: #194056;
   color: #fff;
 }
 
@@ -1751,7 +1751,7 @@ figure {
 .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #0c9cee;
+  border-color: #194056;
 }
 
 .mb30 {
@@ -1818,7 +1818,7 @@ figure {
 
  
 .middleBox {
-  padding-top: 30vh;
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1830,12 +1830,14 @@ figure {
     padding-top: 0vh;
   }
 }
+
 .middleBox table,
 .middleBox table tbody,
 .middleBox table tbody tr,
 .middleBox table tbody tr td {
   width: 100%;
   max-width: 750px;
+  padding: 20px;
 }
 
 .middleBox table tbody tr td p,
