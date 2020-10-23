@@ -1815,7 +1815,19 @@ figure {
   height: 100%;
 }
 
+
+@media screen and (max-width: 768px) {
+  .middleBox{  
+    padding-top: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+ 
 .middleBox {
+  padding-top: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
