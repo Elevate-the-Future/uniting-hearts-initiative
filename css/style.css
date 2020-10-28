@@ -1815,8 +1815,6 @@ figure {
   height: 100%;
 }
 
-
- 
 .middleBox {
   padding-top: 200px;
   display: flex;
@@ -1826,7 +1824,7 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
-  .middleBox{  
+  .middleBox {
     padding-top: 0vh;
   }
 }
@@ -1843,4 +1841,9 @@ figure {
 .middleBox table tbody tr td p,
 .middleBox table tbody tr td h3 {
   padding: 1%;
+}
+
+#fh5co-project .media-body.media-middle.involved-desc {
+  padding-left: 30px;
+  padding-right: 30px;
 }
