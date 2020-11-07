@@ -1826,6 +1826,7 @@ figure {
 @media screen and (max-width: 768px) {
   .middleBox {
     padding-top: 0vh;
+    display: unset;
   }
 }
 
